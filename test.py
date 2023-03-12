@@ -27,7 +27,7 @@ columns_list.remove('title')
 new_dic = dict(zip(mapping_dict.values(), mapping_dict.keys()))
 
 # 连接数据库，输入个人配置
-graph= Graph('bolt://localhost:7687', auth=("neo4j", "ticket-celtic-humor-story-lazarus-7388"))
+graph= Graph('bolt://localhost:7687', auth=("neo4j", "ticket-celtic-humor-story-lazarus-7388"))#连接neo4j数据库
 # 清空全部数据
 graph.delete_all()
 # 开启一个新的事务
